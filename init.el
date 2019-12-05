@@ -48,7 +48,10 @@ This function should only modify configuration layer settings."
      git
      multiple-cursors
      treemacs
-     python
+     (python :variables
+             python-formatter 'black
+             python-format-on-save t
+     )
      org
      syntax-checking
      better-defaults
