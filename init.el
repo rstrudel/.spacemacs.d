@@ -495,6 +495,7 @@ This function is called at the very end of Spacemacs initialization."
      ("PROG" . "#3a81c3")
      ("OKAY" . "#3a81c3")
      ("DONT" . "#f2241f")
+     ("SUCCESS" . "#42ae2c")
      ("FAIL" . "#f2241f")
      ("DONE" . "#42ae2c")
      ("NOTE" . "#b1951d")

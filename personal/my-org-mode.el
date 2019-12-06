@@ -77,7 +77,7 @@
   ;;(org-remember-insinuate)
 
   (setq org-todo-keywords
-        '((sequence "TODO(t)" "SOMEDAY(s)" "STARTED(S!/!)" "WAITING(w/!)" "|" "DONE(d)" "DEFERRED(D@)" "CANCELLED(c@)")))
+        '((sequence "TODO(t)" "SOMEDAY(s)" "STARTED(S!/!)" "WAITING(w/!)" "|" "DONE(d)" "DEFERRED(D@)" "CANCELLED(c@)" "SUCCESS(su)" "FAIL(f!)")))
 
   (defun my-focus-emacs-window ()
     (call-process "wmctrl" nil nil nil "-x" "-a" "emacs"))
@@ -118,9 +118,11 @@
   ;; commented for now (uncomment if too many completions at one point)
   ;; (setq org-outline-path-complete-in-steps t)
 
-  (setq org-todo-keyword-faces (quote (("TODO" :foreground "red" :weight bold)
+  (setq org-todo-keyword-faces (quote (("TODO" :foreground "orange" :weight bold)
                                        ("STARTED" :foreground "cyan" :weight bold)
                                        ("DONE" :foreground "forest green" :weight bold)
+                                       ("SUCCESS" :foreground "green" :weight bold)
+                                       ("FAIL" :foreground "red" :weight bold)
                                        ("WAITING" :foreground "orange" :weight bold)
                                        ("SOMEDAY" :foreground "magenta" :weight bold)
                                        ("CANCELLED" :foreground "forest green" :weight bold)
