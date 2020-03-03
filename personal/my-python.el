@@ -20,3 +20,9 @@
 
 ;; conda environment settings
 (setenv "WORKON_HOME" "/home/rstrudel/miniconda3/envs")
+
+;; Disable which-function-mode in Cython
+;; See https://github.com/syl20bnr/spacemacs/issues/12740
+(add-hook 'cython-mode-hook
+          (lambda ()
+            (which-function-mode -1)))
